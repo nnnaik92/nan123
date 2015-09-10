@@ -7,7 +7,7 @@ require 'rails_helper'
     expect(FactoryGirl.build(:post)).to be_valid
   end
   it "is invalid without a title" do
-    title = Post.new(title: "amit")
+    title = Post.new(title: nil)
     title.valid?
     expect(title.errors[:title]).to include("can't be blank")
   end
