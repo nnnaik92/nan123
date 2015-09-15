@@ -7,6 +7,5 @@ class Post < ActiveRecord::Base
   validates :title, presence: true
   validates :description, presence: true
   validates :category, presence: true
-  #validates :image, presence: true
-
+  validates :download, presence: true
 end

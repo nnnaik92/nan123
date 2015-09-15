@@ -26,7 +26,9 @@ gem 'better_errors'
 gem 'rb-readline'
 gem "paperclip", "~> 4.3"
 gem 'devise'
-
+gem 'bourbon', '~> 4.2.4'
+gem 'neat', '~> 1.7.2'
+gem 'bitters', '~> 1.1.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
