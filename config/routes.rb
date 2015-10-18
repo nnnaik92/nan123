@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+
+
+  get 'users/show'
+  get 'users/timeline'
+
+  
   resources :posts
 
   devise_for :users

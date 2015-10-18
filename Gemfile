@@ -29,6 +29,7 @@ gem 'devise'
 gem 'bourbon', '~> 4.2.4'
 gem 'neat', '~> 1.7.2'
 gem 'bitters', '~> 1.1.0'
+gem "acts_as_follower"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
