@@ -30,9 +30,10 @@ gem 'bourbon', '~> 4.2.4'
 gem 'neat', '~> 1.7.2'
 gem 'bitters', '~> 1.1.0'
 gem "acts_as_follower"
+gem 'acts_as_votable', '~> 0.10.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'materialize-sass'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
