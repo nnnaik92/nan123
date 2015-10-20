@@ -5,11 +5,11 @@
     <%=image_tag @post.image.url(:medium) %>
   </div>
   <div class="like l2">
-    <%= link_to "upvote", like_post_path(@post), method: :put %>
+    <%= link_to "Like", like_post_path(@post), method: :put %>
   </div>
 
   <div class="dislike l2">
-    <%= link_to "downvote", dislike_post_path(@post), method: :put %> <br>
+    <%= link_to "Dislike", dislike_post_path(@post), method: :put %> <br>
   </div>
 </div>
 

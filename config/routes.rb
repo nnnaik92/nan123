@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
 
 
-  resources :users, only: [:update, :edit] do
+  resources :users , except: [:destroy, :show] do
     member do
       get :follow
       get :Unfollow
       get :timeline
+      get :profile
     end
   end
 

@@ -22,11 +22,5 @@ require 'rails_helper'
     expect(post.errors[:category]).to include("can't be blank")
   end
 
-  it "is invalid without a download option" do
-    post = Post.new(download: nil)
-    post.valid?
-    expect(post.errors[:download]).to include("can't be blank")
-  end
-
   #it "is invalid without a image"
  end

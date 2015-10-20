@@ -45,8 +45,34 @@
 
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
-
+<div class="Yeildsize">
 <%= yield %>
+</div>
+<footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">About Us</h5>
+                <p class="grey-text text-lighten-4">We provide services to improve your business through our Digital Art platform explore us to know more</p>
+              </div>
+              <div class="col l2 offset-l4 s12">
+                <h5 class="white-text">Social</h5>
+                <ul>
+                  <a class="grey-text text-lighten-3" href="#!"><%= image_tag("facebook.png", height: '32', width: '32') %></a>&nbsp;&nbsp;&nbsp;
+                  <a class="grey-text text-lighten-3" href="#!"><%= image_tag("twitter.png", height: '32', width: '32') %></a>&nbsp;&nbsp;&nbsp;
+                  <a class="grey-text text-lighten-3" href="#!"><%= image_tag("google plus.png", height: '32', width: '32') %></a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2015 Digital Art Gallery
+            </div>
+          </div>
+        </footer>
+
+
 
 </body>
 </html>
