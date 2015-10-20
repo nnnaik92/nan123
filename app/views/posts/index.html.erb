@@ -1,14 +1,5 @@
-<!-- <%= link_to "user", users_show_path %>
-<%= link_to "timeline", users_timeline_path %>
-<h1>Post1</h1> -->
-
-<%= link_to 'New Post', new_post_path %>
-
-<div class="row">
-<% @posts.each do |post| %>
-
-
-
+ <div class="row">
+ <% @posts.each do |post| %>
       <div class="col s12 m6 l4">
         <div class="card small">
           <div class="card-image">
@@ -16,20 +7,19 @@
             <span class="card-title"><%= post.title %></span>
           </div>
           <div class="card-content">
-            <%= post.description %>
+            <%= post.description %> <br>
+            <%= link_to post.user.email, user_path(post.user.id) %> <br>
+            <div class="like">
+             <i class="tiny material-icons">thumb_up</i><%= post.get_upvotes.size %>
+           </div>
+           <div class="dislike">
+             <i class="tiny material-icons">thumb_down</i><%= post.get_downvotes.size %>
+           </div>
           </div>
           <div class="card-action">
             <%= link_to 'Show', post %>
           </div>
         </div>
       </div>
-
-
-
-
-
-
-
-
 <% end %>
 </div>

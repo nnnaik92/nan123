@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
 
 
-  get 'users/show'
-  get 'users/timeline'
+  resources :users, only: [:update, :edit] do
+    member do
+      get :follow
+      get :Unfollow
+      get :timeline
+    end
+  end
+
 
 
   resources :posts do

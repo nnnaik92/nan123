@@ -1,30 +1,23 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+<div class="col">
+  <div class="Avatar l8 s12">
+    <%=image_tag @post.image.url(:medium) %>
+  </div>
+  <div class="like l2">
+    <%= link_to "upvote", like_post_path(@post), method: :put %>
+  </div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @post.description %>
-</p>
-
-<p>
-  <strong>Type:</strong>
-  <%= @post.category %>
-</p>
-
-<p>
-  <strong>Download:</strong>
-  <%= @post.download %>
-</p>
+  <div class="dislike l2">
+    <%= link_to "downvote", dislike_post_path(@post), method: :put %> <br>
+  </div>
+</div>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
 <br>
-<%= link_to "upvote", like_post_path(@post), method: :put %>
-<%= link_to "downvote", dislike_post_path(@post), method: :put %> <br>
+
+
 <%= @post.get_upvotes.size %>
 <div id="comment">
 
