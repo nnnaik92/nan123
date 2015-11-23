@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @report.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @report.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @report.phone %>
+</p>
+
+<p>
+  <strong>Feed type:</strong>
+  <%= @report.feed_type %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @report.subject %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @report.description %>
+</p>
+
+<%= link_to 'Edit', edit_report_path(@report) %> |
+<%= link_to 'Back', reports_path %>

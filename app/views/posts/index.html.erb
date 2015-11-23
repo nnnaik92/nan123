@@ -9,12 +9,7 @@
           <div class="card-content">
             <%= post.description %> <br>
             <%= link_to post.user.email, profile_user_path(post.user.id) %> <br>
-            <div class="like">
-             <i class="tiny material-icons">thumb_up</i><%= post.get_upvotes.size %>
-           </div>
-           <div class="dislike">
-             <i class="tiny material-icons">thumb_down</i><%= post.get_downvotes.size %>
-           </div>
+            
           </div>
           <div class="card-action">
             <%= link_to 'Show', post %>
